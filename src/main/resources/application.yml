@@ -1,0 +1,25 @@
+spring:
+  data:
+    rest:
+      default-media-type: application/json
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:h2:mem:TEST
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+    hikari:
+      idle-timeout: 10000
+    sql-script-encoding: UTF-8
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  http:
+    encoding:
+      charset: UTF-8
+server:
+  port: 8080
+
+
